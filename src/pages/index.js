@@ -1,3 +1,7 @@
 import React from "react"
 
-export default () => <div>Hello world!</div>
+export default () => (
+    <div className="container mx-auto">
+        <h1>Hello!!</h1>
+    </div>
+)
