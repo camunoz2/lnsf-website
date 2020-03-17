@@ -19,11 +19,11 @@ export default () => (
 
             <div className="flex-auto">
                 <div className="flex flex-row justify-around bg-black text-white py-1">
-                    <h2>Inicio</h2>
-                    <h2>Cursos</h2>
-                    <h2>Docentes</h2>
-                    <h2>Noticias</h2>
-                    <h2>Contacto</h2>
+                    <p>Inicio</p>
+                    <p>Cursos</p>
+                    <p>Docentes</p>
+                    <p>Noticias</p>
+                    <p>Contacto</p>
                 </div>
                 <div className="flex flex-row justify-around text-gray-800 mt-6 text-right">
 

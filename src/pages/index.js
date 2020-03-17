@@ -1,6 +1,6 @@
 import React from "react"
-import Header from "../components/header"
+import Maintenance from "../pages/maintenance"
 
 export default () => (
-    <Header></Header>
+    <Maintenance></Maintenance>
 )
