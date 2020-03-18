@@ -1,12 +1,11 @@
 import React from "react"
-import Header from "../components/header"
-import Navbar from "../components/navbar"
-import Slider from  "../components/slider"
+// import Header from "../components/header"
+// import Navbar from "../components/navbar"
+import PostsSlider from "../components/posts-slider"
 
 export default () => (
+
     <div>
-        <Header></Header>
-        <Navbar></Navbar>
-        <Slider></Slider>
+        <PostsSlider></PostsSlider>
     </div>
 )
