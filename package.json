@@ -22,6 +22,7 @@
     "classnames": "^2.2.6",
     "gatsby": "^2.19.7",
     "gatsby-plugin-postcss": "^2.1.21",
+    "gatsby-source-contentful": "^2.1.98",
     "primeicons": "^2.0.0",
     "primereact": "^4.1.1",
     "react": "^16.12.0",
