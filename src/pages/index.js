@@ -1,37 +1,42 @@
 import React from "react"
-import Header from "../components/header"
-import Navbar from "../components/navbar"
-import Features from "../components/features"
-import CardGrid from "../components/card-grid"
+import { Link } from "gatsby"
 
-import BlogPosts from "./blog-posts"
+import Button from "../components/widgets/button"
 
-import {graphql} from 'gatsby'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons"
 
-// import PostsSlider from "../components/posts-slider"
+export default () => (
+    <div className="font-mono bg-gray-400 h-screen flex items-center">
+		<div className="container mx-auto">
+			<div className="flex justify-center px-6">
+				<div className="w-full xl:w-3/4 lg:w-11/12 flex shadow-2xl">
+					<div
+						className="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg"
+						style={{backgroundImage: `url('https://source.unsplash.com/L0jLHqF7Q94/600x800')`}}
+					></div>
+					<div className="w-full lg:w-1/2 bg-white p-12 rounded-lg lg:rounded-l-none">
+						<div className="px-8 mb-4 text-center">
+							<h3 className="pt-4 mb-2 text-2xl">Liceo Nibaldo Sepúlveda Fernández</h3>
+							<p className="mb-4 text-sm text-gray-700">
+								En estos momentos estamos trabajando en un sitio web institucional y material para nuestros estudiantes, sin embargo, lo más importante en estos momentos es precuparse del bienestar de nuestros hijos y aprovechar el tiempo en enseñar lo principal para tener un buen año escolar: respeto y valores.
+							</p>
+						</div>
+						<div className="flex flex-col justify-center items-center">
+							<Link to="/material">
+								<Button color="gray-400" text="Material por curso" icon={faGraduationCap}></Button>
+							</Link> 
+							<div className="text-center text-gray-700 mt-5">
+								<a href="https://www.facebook.com/profile.php?id=100011171174507" target="_blank" rel="noopener noreferrer">
+									<FontAwesomeIcon size="3x" icon={faFacebook}/>
+								</a>
+							</div>
+						</div>
 
-export default ({ data }) => (
-
-    <div>
-        <Header></Header>
-        <Navbar></Navbar>
-        <BlogPosts data={data.allContentfulBlogPost.edges}></BlogPosts>
-        <Features></Features>
-        <CardGrid></CardGrid>
-    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 )
-
-
-export const query = graphql`
-    query {
-        allContentfulBlogPost(sort: {fields: publishedDate, order: DESC}) {
-        edges {
-            node {
-                title
-                slug
-                publishedDate(formatString: "D MMMM, YYYY", locale: "es")
-            }
-        }
-        }
-    }
-`
