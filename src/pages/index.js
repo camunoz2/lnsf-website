@@ -4,11 +4,9 @@ import Navbar from "../components/navbar"
 import Features from "../components/features"
 import CardGrid from "../components/card-grid"
 
-import BlogPosts from "./blog-posts"
+import BlogPosts from "../components/blog-posts"
 
-import {graphql} from 'gatsby'
-
-// import PostsSlider from "../components/posts-slider"
+import {graphql} from "gatsby"
 
 export default ({ data }) => (
 
