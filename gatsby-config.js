@@ -10,8 +10,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
-        accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
+        spaceId: '851yb6p7lkvc',
+        accessToken: 'cr6r1HPJwuMxjWy3RF5z3Gg16SaVAgGt1aWQMSYljMQ',
       },
     },
     `gatsby-plugin-postcss`
