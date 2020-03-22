@@ -20,7 +20,7 @@ export default () => (
 						<div className="px-8 mb-4 text-center">
 							<h3 className="pt-4 mb-2 text-2xl">Liceo Nibaldo Sepúlveda Fernández</h3>
 							<p className="mb-4 text-sm text-gray-700">
-								En estos momentos estamos trabajando en un sitio web institucional y material para nuestros estudiantes, sin embargo, lo más importante en estos momentos es precuparse del bienestar de nuestros hijos y aprovechar el tiempo en enseñar lo principal para tener un buen año escolar: respeto y valores.
+								Estamos trabajando en un sitio web institucional y material para nuestros estudiantes. Cuidense y recuerden quedarse en casa, a este virus lo derrotamos en familia.
 							</p>
 						</div>
 						<div className="flex flex-col justify-center items-center">
