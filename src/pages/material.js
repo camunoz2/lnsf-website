@@ -79,7 +79,7 @@ export default () => {
                 <Card style={{backgroundColor: '#d63447'}} className="w-1/4 m-2" title="4to Medio" subTitle="Prof. Claudio Fernández" footer={footer("https://drive.google.com/open?id=14BH0SRQlwOVyWJ4WZLvTq2NI6TCHwjJI")}>
                 </Card>
 
-                <Card style={{backgroundColor: '#fae7cb'}} className="w-1/4 m-2" title="Taller Laboral" subTitle="Prof. Magdalena Parra" footer={footer("https://drive.google.com/open?id=1mX4WA7n24mBx09PB1DFHk4uVvpjxIYBh")}>
+                <Card style={{backgroundColor: '#fae7cb'}} className="w-1/4 m-2" title="Taller Laboral" subTitle="Prof. María Parra" footer={footer("https://drive.google.com/open?id=1mX4WA7n24mBx09PB1DFHk4uVvpjxIYBh")}>
                 </Card>
                 
 
