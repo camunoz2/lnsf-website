@@ -21,6 +21,7 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "classnames": "^2.2.6",
     "gatsby": "^2.19.7",
+    "gatsby-plugin-google-analytics": "^2.2.2",
     "gatsby-plugin-postcss": "^2.1.21",
     "gatsby-source-contentful": "^2.1.98",
     "primeicons": "^2.0.0",

@@ -14,6 +14,12 @@ module.exports = {
         accessToken: 'cr6r1HPJwuMxjWy3RF5z3Gg16SaVAgGt1aWQMSYljMQ',
       },
     },
-    `gatsby-plugin-postcss`
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-67985927-5",
+      }
+    }
   ],
 }
