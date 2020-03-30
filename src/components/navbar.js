@@ -2,14 +2,16 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faYoutube } from "@fortawesome/free-brands-svg-icons"
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+
 
 
 
 export default () => (
     <nav className="shadow-xl">
-        <div className="container mx-auto flex items-center py-4">
+        <div className="sm:visible container mx-auto flex items-center py-4">
             <div>
-                <ul className="flex justify-start uppercase">
+                <ul className="hidden flex justify-start uppercase">
                     <li className="mr-8">Inicio</li>
                     <li className="mr-8">Mision y Vision</li>
                     <li className="mr-8">Docentes</li>
