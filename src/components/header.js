@@ -52,6 +52,8 @@ export default () => (
 
                 </div>
             </div>
-            <FontAwesomeIcon icon={faBars} size="2x" color="white" className="sm:hidden"/>
+            <div className="sm:hidden cursor-pointer text-gray-500 hover:text-white">
+                <FontAwesomeIcon icon={faBars} size="2x"/>
+            </div>
         </div>
 )

@@ -12,8 +12,8 @@ import {graphql} from "gatsby"
 export default ({ data }) => (
 
     <Layout>
-        <Header></Header>
-
+        <Header/>
+        <Navbar/>
     </Layout>
 )
 
