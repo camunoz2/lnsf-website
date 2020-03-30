@@ -20,13 +20,13 @@ export default () => (
 						<div className="px-8 mb-4 text-center">
 							<h3 className="pt-4 mb-2 text-2xl">Liceo Nibaldo Sepúlveda Fernández</h3>
 							<p className="mb-4 text-sm text-gray-700">
-								Estamos trabajando en un sitio web institucional y material para nuestros estudiantes. Cuidense y recuerden quedarse en casa, a este virus lo derrotamos en familia.
+								Para nuestros alumnos y sus famlias, actualmente nos encontramos actualizando la plataforma web, pronto tendremos nuevas noticias. Que se encuentren muy bien, y saludos a la comunidad.
 							</p>
 						</div>
 						<div className="flex flex-col justify-center items-center">
-							<Link to="/material">
+							{/*<Link to="/material">
 								<Button color="gray-400" text="Material por curso" icon={faGraduationCap}></Button>
-							</Link> 
+							</Link>*/} 
 							<div className="text-center text-gray-700 mt-5">
 								<a href="https://www.facebook.com/profile.php?id=100011171174507" target="_blank" rel="noopener noreferrer">
 									<FontAwesomeIcon size="3x" icon={faFacebook}/>
