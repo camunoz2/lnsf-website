@@ -1,22 +1,20 @@
 import React from "react"
 import MenuItem from "./widgets/menu-item"
 import Button  from "./widgets/button"
+import HamburgerIcon from "./widgets/hamburger-icon"
+
+import Logo from "../assets/lnsf_logo.png"
 
 import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons"
 import { faUser } from "@fortawesome/free-regular-svg-icons"
 import { faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons"
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
+export default ({open, setOpen}) => {
 
-
-
-import Logo from "../assets/lnsf_logo.png"
-
-export default () => (
+    return(
         <div className="flex justify-around sm:justify-between items-center py-4 px-4 bg-gray-800">
-            <div className="sm:flex justify-between items-center container mx-auto">
+            <div className="flex justify-between items-center container mx-auto">
                 <div className="flex items-center">
                     <img className="hidden md:block w-20 mr-4" src={Logo} alt="logo liceo nibaldo sepulveda"></img>
 
@@ -44,16 +42,19 @@ export default () => (
                         desc = "Actividades y noticias"
                     />
                 </div>
+
                 <div className="hidden sm:block">
                     <Button
                         text = 'Contacto'
                         icon = {faPaperPlane}
                     />
-
                 </div>
+            
+                <HamburgerIcon open={open} setOpen={setOpen}/>
             </div>
-            <div className="sm:hidden cursor-pointer text-gray-500 hover:text-white">
-                <FontAwesomeIcon icon={faBars} size="2x"/>
-            </div>
+
         </div>
-)
+
+    )
+
+}
