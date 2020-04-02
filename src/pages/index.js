@@ -28,7 +28,7 @@ export default class App extends React.Component {
 								<div className="px-8 mb-4 text-center">
 									<h3 className="pt-4 mb-2 text-2xl">Liceo Nibaldo Sepúlveda Fernández</h3>
 									<p className="mb-4 text-sm text-gray-700">
-										Para nuestros alumnos y sus famlias, actualmente nos encontramos actualizando la plataforma web, pronto tendremos nuevas noticias. Que se encuentren muy bien, y saludos a la comunidad.
+										Estimada comunidad, tenemos nuevas noticias para las clases de abril, con nuestro cuerpo docente estamos actualizando todas las semanas el material. Saludos a ustedes y sus familias.
 									</p>
 								</div>
 								<div className="flex flex-col justify-center items-center">
