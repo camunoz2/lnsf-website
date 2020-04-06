@@ -21,6 +21,10 @@ export default () => {
 
             <a href="https://drive.google.com/open?id=1I5Et7M2IUHS-6SCoXhqbfRvTqeSypOUr">
             </a>
+
+                <Card style={{backgroundColor: '#ffef5f'}} className="w-1/4 m-2" title="Pre-Básica" subTitle="Luz Villa y Luisa Arévalo" footer={footer("https://drive.google.com/open?id=1Fs1J8br9w-zCK9Tn8wRYIS4mF5e6Wtjv")}>
+                </Card>
+
                 <Card style={{backgroundColor: '#ffe75e'}} className="w-1/4 m-2" title="1ro Básico" subTitle="Prof. David Muñoz" footer={footer("https://drive.google.com/open?id=1I5Et7M2IUHS-6SCoXhqbfRvTqeSypOUr")}>
                 </Card>
                 
