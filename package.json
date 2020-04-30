@@ -19,16 +19,11 @@
     "@fortawesome/free-regular-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.9",
-    "classnames": "^2.2.6",
     "gatsby": "^2.19.7",
     "gatsby-plugin-postcss": "^2.1.21",
     "gatsby-source-contentful": "^2.1.98",
-    "primeicons": "^2.0.0",
-    "primereact": "^4.1.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-transition-group": "^4.3.0",
-    "typeface-open-sans": "0.0.75"
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1",
