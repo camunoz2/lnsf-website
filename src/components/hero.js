@@ -2,6 +2,7 @@ import React from "react"
 import Button from "../components/widgets/button"
 import { faPersonBooth } from "@fortawesome/free-solid-svg-icons"
 import { faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "gatsby"
 
 const Hero = () => {
   return (
@@ -15,7 +16,9 @@ const Hero = () => {
           <div className="container mx-auto">
             <div className="flex text-center py-4 justify-center">
               <div className="mr-2 md:mr-12">
-                <Button text="Soy Alumno" icon={faPersonBooth} />
+                <Link to="/alumni">
+                  <Button text="Soy Alumno" icon={faPersonBooth} />
+                </Link>
               </div>
               <div>
                 <Button text="Soy Profesor" icon={faChalkboardTeacher} />

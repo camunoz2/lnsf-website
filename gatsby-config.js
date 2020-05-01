@@ -12,6 +12,13 @@ module.exports = {
         accessToken: "cr6r1HPJwuMxjWy3RF5z3Gg16SaVAgGt1aWQMSYljMQ",
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
     `gatsby-plugin-postcss`,
   ],
 }
