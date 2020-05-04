@@ -1,6 +1,6 @@
 import React from "react"
 
-const EventCard = ({ course, teacher, lastUpdated, tooggleModal }) => {
+const CourseCard = ({ course, teacher, lastUpdated, handleCourse }) => {
   return (
     <div className="bg-gray-200">
       <div className="flex flex-col border-2 shadow p-4">
@@ -17,7 +17,7 @@ const EventCard = ({ course, teacher, lastUpdated, tooggleModal }) => {
             <p className="text-gray-800">{lastUpdated}</p>
           </div>
           <button
-            onClick={tooggleModal}
+            onClick={() => handleCourse(course)}
             className="bg-green-300 py-1 px-4 shadow rounded"
           >
             Abrir curso
@@ -28,4 +28,4 @@ const EventCard = ({ course, teacher, lastUpdated, tooggleModal }) => {
   )
 }
 
-export default EventCard
+export default CourseCard

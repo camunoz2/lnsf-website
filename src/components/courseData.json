@@ -1,0 +1,106 @@
+[
+  {
+    "course": "1ro Basico",
+    "tutor": "David Munoz",
+    "classes": [
+      {
+        "name": "Artes Visuales",
+        "classroomCode": "ASXCFN"
+      },
+      {
+        "name": "Ciencias Naturales",
+        "classroomCode": "s"
+      },
+      {
+        "name": "Educacion Fisica",
+        "classroomCode": "dsa"
+      },
+      {
+        "name": "Historia y Geografia",
+        "classroomCode": "asdv23"
+      },
+      {
+        "name": "Lenguaje",
+        "classroomCode": "asdv"
+      }
+    ]
+  },
+  {
+    "course": "2do Basico",
+    "tutor": "Candelaria Jimenez",
+    "classes": [
+      {
+        "name": "Artes Visuales",
+        "classroomCode": "ASXCFN"
+      },
+      {
+        "name": "Ciencias Naturales",
+        "classroomCode": "vdv2"
+      },
+      {
+        "name": "Educacion Fisica",
+        "classroomCode": "nbnb"
+      },
+      {
+        "name": "Historia y Geografia",
+        "classroomCode": "nngng"
+      },
+      {
+        "name": "Lenguaje",
+        "classroomCode": "5656"
+      }
+    ]
+  },
+  {
+    "course": "3ro Basico",
+    "tutor": "Margot Jimenez",
+    "classes": [
+      {
+        "name": "Artes Visuales",
+        "classroomCode": "xvcb54"
+      },
+      {
+        "name": "Ciencias Naturales",
+        "classroomCode": "xcvbb5"
+      },
+      {
+        "name": "Educacion Fisica",
+        "classroomCode": "yuio5"
+      },
+      {
+        "name": "Historia y Geografia",
+        "classroomCode": "ghfd3"
+      },
+      {
+        "name": "Lenguaje",
+        "classroomCode": "bdf3"
+      }
+    ]
+  },
+  {
+    "course": "4to Basico",
+    "tutor": "Margot Jimenez",
+    "classes": [
+      {
+        "name": "Artes Visuales",
+        "classroomCode": "zxcv3"
+      },
+      {
+        "name": "Ciencias Naturales",
+        "classroomCode": "kjhg6"
+      },
+      {
+        "name": "Educacion Fisica",
+        "classroomCode": "hgd4"
+      },
+      {
+        "name": "Historia y Geografia",
+        "classroomCode": "cvbn5"
+      },
+      {
+        "name": "Lenguaje",
+        "classroomCode": "kljgh5"
+      }
+    ]
+  }
+]

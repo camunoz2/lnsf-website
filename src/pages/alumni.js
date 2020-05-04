@@ -1,20 +1,48 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
 import CourseCard from "../components/widgets/course-card"
-import CourseModal from "../components/widgets/course-modal"
+import CourseSnack from "../components/widgets/course-snack"
+import JSONdata from "../components/courseData.json"
 
 const Alumni = () => {
-  const [open, setOpen] = useState(false)
-  const tooggleModal = () => {
-    if (open) {
-      setOpen(false)
-    } else setOpen(true)
-    console.log(open)
+  const [currentCourse, setCurrentCourse] = useState({
+    open: false,
+    course: "",
+  })
+
+  const handleCourse = value => {
+    if (currentCourse.open) {
+      setCurrentCourse({ open: false, course: value })
+    } else setCurrentCourse({ open: true, course: value })
   }
 
   return (
     <Layout>
-      <CourseModal open={open} closeModal={tooggleModal} />
+      <div
+        className={`bg-gray-600 w-full p-4 absolute t-0 l-0 r-0 b-0 ${
+          currentCourse.open ? "" : "hidden"
+        }`}
+      >
+        <button
+          className="bg-green-400 px-4 py-2 border-1 rounded shadow"
+          onClick={() => setCurrentCourse({ open: false })}
+        >
+          Volver
+        </button>
+        <ul>
+          {JSONdata.filter(
+            course => course.course === currentCourse.course
+          ).map(currentClass =>
+            currentClass.classes.map(singleClass => (
+              <CourseSnack
+                course={singleClass.name}
+                code={singleClass.classroomCode}
+                key={singleClass.classroomCode}
+              />
+            ))
+          )}
+        </ul>
+      </div>
 
       <div className="container mx-auto mt-4">
         <div className="grid grid-cols-3 gap-4">
@@ -23,30 +51,19 @@ const Alumni = () => {
               Escoge tu curso
             </h2>
           </div>
-          <div className="col-span-3 md:col-span-1">
-            <CourseCard
-              course="1ro Basico"
-              teacher="Patricia Parada"
-              lastUpdated="24 de Marzo"
-              tooggleModal={tooggleModal}
-            />
-          </div>
-          <div className="col-span-3 md:col-span-1">
-            <CourseCard
-              course="2do Basico"
-              teacher="Margot Acuña"
-              lastUpdated="16 de Abril"
-              tooggleModal={tooggleModal}
-            />
-          </div>
-          <div className="col-span-3 md:col-span-1">
-            <CourseCard
-              course="3ro Basico"
-              teacher="Margot Acuña"
-              lastUpdated="16 de Abril"
-              tooggleModal={tooggleModal}
-            />
-          </div>
+          {JSONdata.map(classroom => {
+            return (
+              <div className="col-span-3 md:col-span-1" key={classroom.course}>
+                <CourseCard
+                  key={classroom.course}
+                  course={classroom.course}
+                  teacher={classroom.tutor}
+                  lastUpdated="24 de Marzo"
+                  handleCourse={value => handleCourse(value)}
+                />
+              </div>
+            )
+          })}
         </div>
       </div>
     </Layout>
